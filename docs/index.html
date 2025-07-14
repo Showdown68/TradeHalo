@@ -253,3 +253,61 @@ function App() {
 }
 
 export default App;
+import { useState } from 'react';
+
+function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  return (
+    <div className={`App ${theme}`}>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+      <header>
+        <h1>🚀 TradeHalo</h1>
+        <p>AI dashboard for crypto traders — mimic whales, predict trades, journal strategy</p>
+        <div className="buttons">
+          <a href="https://github.com/Showdown68/TradeHalo">📁 GitHub</a>
+          <a href="https://github.com/Showdown68/TradeHalo/blob/main/docs/deck.md">📄 Deck</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>🧠 Features</h2>
+        <ul>
+          <li>🐋 Whale mimic alerts</li>
+          <li>📊 XGBoost predictor</li>
+          <li>🎙️ Whisper journaling</li>
+          <li>💼 Stripe access tiers</li>
+        </ul>
+
+        <h2>🎬 Demos</h2>
+        <img src="/static/mimic_bot_trigger.gif" alt="Demo 1" />
+        <img src="/static/predictor_score_demo.gif" alt="Demo 2" />
+        <img src="/static/voice_journal_flow.gif" alt="Demo 3" />
+
+        <h2>💳 Tiers</h2>
+        <div className="tiers">
+          <div>Trader – $9</div>
+          <div>Analyst – $19</div>
+          <div>Whale – $39</div>
+        </div>
+
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+          <input type="email" name="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p>💬 Join us on <a href="https://discord.gg/yourinvite">Discord</a></p>
+      </section>
+
+      <footer>
+        Built by Showdown68 · Powered by Copilot · TradeHalo v1.0
+      </footer>
+    </div>
+  );
+}
+
+export default App;
