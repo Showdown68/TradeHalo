@@ -1,3 +1,4 @@
+[![View Site](https://img.shields.io/badge/site-TradeHalo-blue)](https://showdown68.github.io/TradeHalo/)
 # 🌀 TradeHalo
 
 ![TradeHalo Logo](static/branding/tradehalo-logo.png)
