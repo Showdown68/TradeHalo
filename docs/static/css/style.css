@@ -35,5 +35,22 @@ body.dark a {
 body.dark img {
   filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
 }
-@media (prefers-color-scheme: dark) { … }
+body.dark {
+  background-color: #111;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body.dark a {
+  color: #4fc3f7;
+}
+
+body.dark h1, h2, h3 {
+  color: #ffffff;
+}
+
+body.dark img {
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
 
