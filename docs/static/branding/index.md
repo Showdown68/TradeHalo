@@ -1,3 +1,17 @@
+<button id="toggleTheme">Toggle Theme</button>
+<script>
+  const button = document.getElementById("toggleTheme");
+  button.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+  });
+
+  window.onload = () => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  };
+</script>
 <link rel="icon" href="static/branding/favicon.png" type="image/png">
 <link rel="icon" href="static/branding/favicon.png" type="image/png">
 <link rel="icon" href="static/branding/favicon.png" type="image/png">
@@ -40,4 +54,14 @@ Explore the power behind TradeHalo’s real-time monitoring suite:
     <p><em>Optimize every watt</em></p>
   </div>
 </div>
+## 🔌 Coming Soon: Plugin Modules
+
+Explore the features rolling out soon to supercharge your dashboard:
+
+| Module Name        | Description                                     | Status     |
+|--------------------|-------------------------------------------------|------------|
+| Pool Switcher      | Swap mining pools with a single click           | 🔄 In Dev   |
+| Latency Watchdog   | Tracks server response time and flags delays    | 🧠 Planned  |
+| Profit Estimator   | Converts mining output to fiat in real-time     | 💰 Beta     |
+| Mobile Sync        | View stats from your phone (AxeOS Companion)    | 📱 In Dev   |
 
