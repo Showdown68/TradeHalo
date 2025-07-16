@@ -130,3 +130,11 @@ TradeHalo is built to adapt. These add-ons will expand your rig's insight and co
 button:hover {
   box-shadow: 0 0 8px rgba(88,166,255,0.6);
 }
+## 🧭 Getting Started
+
+Kick off your TradeHalo experience in three easy steps:
+
+1. **Clone the Repo**  
+   ```bash
+   git clone https://github.com/Showdown68/TradeHalo.git
+   cd TradeHalo
