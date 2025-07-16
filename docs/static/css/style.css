@@ -1,26 +1,15 @@
-body.dark {
-  background-color: #111;
-  color: #e0e0e0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body.dark a {
-  color: #4fc3f7;
-}
-
-body.dark h1, h2, h3 {
-  color: #ffffff;
-}
-
-body.dark img {
-  filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
-}
 button {
-  color: white;
+  color: #fff !important;
   font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
 }
+
 button:hover {
-  color: #ffffff;
   background-color: #3a8ee6;
+  color: #ffffff !important;
   cursor: pointer;
 }
