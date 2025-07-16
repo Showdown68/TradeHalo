@@ -64,4 +64,29 @@ Explore the features rolling out soon to supercharge your dashboard:
 | Latency Watchdog   | Tracks server response time and flags delays    | 🧠 Planned  |
 | Profit Estimator   | Converts mining output to fiat in real-time     | 💰 Beta     |
 | Mobile Sync        | View stats from your phone (AxeOS Companion)    | 📱 In Dev   |
+## 🔌 Plugin Modules (Coming Soon)
+
+TradeHalo is built for extensibility. These modules will plug in seamlessly to expand your rig’s intelligence:
+
+| ⚙️ Plugin         | 🔍 Functionality                                      | 🚧 Status   |
+|------------------|--------------------------------------------------------|------------|
+| Pool Switcher    | Swap mining pools instantly without downtime           | 🛠️ In Dev   |
+| Latency Watchdog | Track pool ping, alert on slow response times          | 🧠 Planned  |
+| Profit Estimator | Converts earnings to fiat or token in real time        | 💰 Beta     |
+| Mobile Sync      | AxeOS dashboard on mobile via TradeHalo Companion App  | 📱 In Dev   |
+| Plugin Loader    | Enables dynamic community-built plugin support         | 🔌 Concept  |
+<button id="themeToggle">🌓 Toggle Theme</button>
+<script>
+  const toggle = document.getElementById("themeToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+  });
+
+  window.onload = () => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  };
+</script>
 
