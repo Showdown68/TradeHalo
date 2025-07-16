@@ -89,4 +89,25 @@ TradeHalo is built for extensibility. These modules will plug in seamlessly to e
     }
   };
 </script>
+## 🔌 Plugin Modules (Coming Soon)
 
+TradeHalo is built to adapt. These add-ons will expand your rig's insight and control:
+
+| ⚙️ Plugin         | 🔍 Functionality                                      | 🚧 Status     |
+|------------------|--------------------------------------------------------|--------------|
+| Pool Switcher    | Swap mining pools instantly with zero downtime         | 🛠️ In Dev     |
+| Latency Watchdog | Tracks pool ping and flags instability                 | 🧠 Planned    |
+| Profit Estimator | Converts earnings to fiat or token
+<script>
+  const toggle = document.getElementById("themeToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+  });
+
+  window.onload = () => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  };
+</script>
