@@ -117,8 +117,16 @@ TradeHalo is built to adapt. These add-ons will expand your rig's insight and co
     50% { filter: drop-shadow(0 0 4px #58a6ff); }
     100% { filter: drop-shadow(0 0 0px #58a6ff); }
   }
+<button onclick="document.getElementById('dashboardPreviews').scrollIntoView({ behavior: 'smooth' })">📊 Dashboard ↓</button>
 
   link[rel="icon"] {
     animation: pulse 2s infinite ease-in-out;
   }
 </style>
+## 📊 Dashboard Previews
+<div id="dashboardPreviews">
+…your content…
+</div>
+button:hover {
+  box-shadow: 0 0 8px rgba(88,166,255,0.6);
+}
