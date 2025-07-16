@@ -111,3 +111,14 @@ TradeHalo is built to adapt. These add-ons will expand your rig's insight and co
     }
   };
 </script>
+<style>
+  @keyframes pulse {
+    0% { filter: drop-shadow(0 0 0px #58a6ff); }
+    50% { filter: drop-shadow(0 0 4px #58a6ff); }
+    100% { filter: drop-shadow(0 0 0px #58a6ff); }
+  }
+
+  link[rel="icon"] {
+    animation: pulse 2s infinite ease-in-out;
+  }
+</style>
