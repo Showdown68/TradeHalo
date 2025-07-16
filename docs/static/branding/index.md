@@ -138,3 +138,36 @@ Kick off your TradeHalo experience in three easy steps:
    ```bash
    git clone https://github.com/Showdown68/TradeHalo.git
    cd TradeHalo
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<h2>📈 Earnings Over Time</h2>
+<canvas id="earningsChart" width="400" height="200"></canvas>
+<script>
+  const ctx = document.getElementById('earningsChart').getContext('2d');
+  const earningsChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+      datasets: [{
+        label: 'Mining Earnings (USD)',
+        data: [120, 150, 170, 160, 190, 200],
+        fill: false,
+        borderColor: '#4fc3f7',
+        tension: 0.2
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: '#ffffff'
+          }
+        }
+      }
+    }
+  });
+</script>
