@@ -26,4 +26,18 @@ Explore the power behind TradeHalo’s real-time monitoring suite:
 
 ![Power Efficiency Chart](static/branding/Copilot_20250714_131229.png)
 *Visualize how every watt translates to trade power.*
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <div style="flex: 1;">
+    <img src="static/branding/Copilot_20250714_130018.png" alt="Hash Rate Monitor" />
+    <p><em>Live TH/s performance monitoring</em></p>
+  </div>
+  <div style="flex: 1;">
+    <img src="static/branding/Copilot_20250714_131158.png" alt="Stale Share Alert" />
+    <p><em>Real-time alerting system</em></p>
+  </div>
+  <div style="flex: 1;">
+    <img src="static/branding/Copilot_20250714_131229.png" alt="Efficiency Chart" />
+    <p><em>Optimize every watt</em></p>
+  </div>
+</div>
 
