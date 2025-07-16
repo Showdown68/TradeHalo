@@ -23,4 +23,16 @@ img:hover {
   transition: transform 0.3s ease;
   box-shadow: 0 0 10px rgba(88,166,255,0.6);
 }
+body.dark {
+  background-color: #111;
+  color: #e0e0e0;
+}
+
+body.dark a {
+  color: #4fc3f7;
+}
+
+body.dark img {
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
 
